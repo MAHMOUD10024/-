@@ -1,0 +1,731 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   '/nix/store/dj805sw07vvpbxx39c8g67x8qddg0ikw-nodejs-18.12.1/bin/node',
+1 verbose cli   '/home/runner/Nagi-BOT-MD-1/node_modules/.bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'heroku'
+1 verbose cli ]
+2 info using npm@2.15.12
+3 info using node@v18.12.1
+4 verbose install initial load of /home/runner/Nagi-BOT-MD-1/.config/npm/node_global/lib/package.json
+5 verbose readDependencies loading dependencies from /home/runner/Nagi-BOT-MD-1/.config/npm/node_global/lib/package.json
+6 silly cache add args [ 'heroku', null ]
+7 verbose cache add spec heroku
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'heroku',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'heroku',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag'
+8 silly cache add }
+9 silly addNamed heroku@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for heroku
+11 info addNameTag [ 'heroku', 'latest' ]
+12 silly mapToRegistry name heroku
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'heroku',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'heroku',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag'
+15 silly mapToRegistry }
+16 silly mapToRegistry uri https://registry.npmjs.org/heroku
+17 verbose addNameTag registry:https://registry.npmjs.org/heroku not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/heroku
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 2:21:12 AM
+21 verbose request id a44b01fcd5d19edc
+22 verbose etag W/"81063867f37fa170d4b07f0b16f9b419"
+23 verbose lastModified Fri, 24 May 2024 18:40:42 GMT
+24 http request GET https://registry.npmjs.org/heroku
+25 http 304 https://registry.npmjs.org/heroku
+26 verbose headers {
+26 verbose headers   date: 'Sat, 08 Jun 2024 02:21:12 GMT',
+26 verbose headers   connection: 'keep-alive',
+26 verbose headers   'cf-ray': '89056837a93a868e-SEA',
+26 verbose headers   'cf-cache-status': 'REVALIDATED',
+26 verbose headers   'access-control-allow-origin': '*',
+26 verbose headers   'cache-control': 'public, max-age=300',
+26 verbose headers   etag: '"81063867f37fa170d4b07f0b16f9b419"',
+26 verbose headers   'last-modified': 'Fri, 24 May 2024 18:40:42 GMT',
+26 verbose headers   vary: 'Accept-Encoding',
+26 verbose headers   server: 'cloudflare'
+26 verbose headers }
+27 silly get cb [
+27 silly get   304,
+27 silly get   {
+27 silly get     date: 'Sat, 08 Jun 2024 02:21:12 GMT',
+27 silly get     connection: 'keep-alive',
+27 silly get     'cf-ray': '89056837a93a868e-SEA',
+27 silly get     'cf-cache-status': 'REVALIDATED',
+27 silly get     'access-control-allow-origin': '*',
+27 silly get     'cache-control': 'public, max-age=300',
+27 silly get     etag: '"81063867f37fa170d4b07f0b16f9b419"',
+27 silly get     'last-modified': 'Fri, 24 May 2024 18:40:42 GMT',
+27 silly get     vary: 'Accept-Encoding',
+27 silly get     server: 'cloudflare'
+27 silly get   }
+27 silly get ]
+28 verbose etag https://registry.npmjs.org/heroku from cache
+29 verbose get saving heroku to /home/runner/.npm/registry.npmjs.org/heroku/.cache.json
+30 verbose correctMkdir /home/runner/.npm correctMkdir not in flight; initializing
+31 silly addNameTag next cb for heroku with tag latest
+32 silly addNamed heroku@8.11.5
+33 verbose addNamed "8.11.5" is a plain semver version for heroku
+34 silly cache afterAdd heroku@8.11.5
+35 verbose afterAdd /home/runner/.npm/heroku/8.11.5/package/package.json not in flight; writing
+36 verbose correctMkdir /home/runner/.npm correctMkdir not in flight; initializing
+37 verbose afterAdd /home/runner/.npm/heroku/8.11.5/package/package.json written
+38 silly install resolved [
+38 silly install resolved   {
+38 silly install resolved     name: 'heroku',
+38 silly install resolved     description: 'CLI to interact with Heroku',
+38 silly install resolved     version: '8.11.5',
+38 silly install resolved     author: { name: 'Jeff Dickey @jdxcode' },
+38 silly install resolved     bin: { heroku: 'bin/run' },
+38 silly install resolved     bugs: { url: 'https://github.com/heroku/cli/issues' },
+38 silly install resolved     dependencies: {
+38 silly install resolved       '@heroku-cli/color': '2.0.1',
+38 silly install resolved       '@heroku-cli/command': '^10.0.0',
+38 silly install resolved       '@heroku-cli/command-v9': 'npm:@heroku-cli/command@^9.0.2',
+38 silly install resolved       '@heroku-cli/notifications': '^1.2.4',
+38 silly install resolved       '@heroku-cli/plugin-addons-v5': '^8.11.2',
+38 silly install resolved       '@heroku-cli/plugin-apps-v5': '^8.11.2',
+38 silly install resolved       '@heroku-cli/plugin-certs-v5': '^8.11.3',
+38 silly install resolved       '@heroku-cli/plugin-ci-v5': '^8.11.5',
+38 silly install resolved       '@heroku-cli/plugin-container-registry-v5': '^8.11.2',
+38 silly install resolved       '@heroku-cli/plugin-orgs-v5': '^8.11.2',
+38 silly install resolved       '@heroku-cli/plugin-pg-v5': '^8.11.2',
+38 silly install resolved       '@heroku-cli/plugin-ps': '^8.1.7',
+38 silly install resolved       '@heroku-cli/plugin-ps-exec': '^2.4.0',
+38 silly install resolved       '@heroku-cli/plugin-redis-v5': '^8.11.1',
+38 silly install resolved       '@heroku-cli/plugin-run': '8.1.4',
+38 silly install resolved       '@heroku-cli/plugin-spaces': '^8.11.1',
+38 silly install resolved       '@heroku-cli/schema': '^1.0.25',
+38 silly install resolved       '@heroku/buildpack-registry': '^1.0.1',
+38 silly install resolved       '@heroku/eventsource': '^1.0.7',
+38 silly install resolved       '@oclif/core': '^2.8.11',
+38 silly install resolved       '@oclif/core-v1': 'npm:@oclif/core@^1.26.2',
+38 silly install resolved       '@oclif/plugin-commands': '2.2.2',
+38 silly install resolved       '@oclif/plugin-help': '^5',
+38 silly install resolved       '@oclif/plugin-legacy': '^1.3.0',
+38 silly install resolved       '@oclif/plugin-not-found': '2.3.16',
+38 silly install resolved       '@oclif/plugin-plugins': '2.4.3',
+38 silly install resolved       '@oclif/plugin-update': '3.2.4',
+38 silly install resolved       '@oclif/plugin-version': '^1.2.1',
+38 silly install resolved       '@oclif/plugin-warn-if-update-available': '2.0.29',
+38 silly install resolved       '@oclif/plugin-which': '2.2.8',
+38 silly install resolved       '@opentelemetry/api': '^1.4.1',
+38 silly install resolved       '@opentelemetry/exporter-trace-otlp-http': '^0.41.1',
+38 silly install resolved       '@opentelemetry/instrumentation': '^0.50.0',
+38 silly install resolved       '@opentelemetry/resources': '^1.15.1',
+38 silly install resolved       '@opentelemetry/sdk-trace-base': '^1.15.1',
+38 silly install resolved       '@opentelemetry/sdk-trace-node': '^1.15.1',
+38 silly install resolved       '@opentelemetry/semantic-conventions': '^1.15.1',
+38 silly install resolved       'ansi-escapes': '3.2.0',
+38 silly install resolved       'async-file': '^2.0.2',
+38 silly install resolved       chalk: '^2.4.2',
+38 silly install resolved       commander: '^2.15.1',
+38 silly install resolved       'date-fns': '^2.30.0',
+38 silly install resolved       debug: '4.3.4',
+38 silly install resolved       'edit-string': '^1.1.6',
+38 silly install resolved       execa: '5.1.1',
+38 silly install resolved       foreman: '^3.0.1',
+38 silly install resolved       'fs-extra': '7.0.1',
+38 silly install resolved       'github-url-to-object': '^4.0.4',
+38 silly install resolved       got: '^9.6.0',
+38 silly install resolved       'heroku-cli-util': '^8.0.12',
+38 silly install resolved       'http-call': '5.3.0',
+38 silly install resolved       inquirer: '^8.2.6',
+38 silly install resolved       lodash: '^4.17.21',
+38 silly install resolved       'netrc-parser': '3.1.6',
+38 silly install resolved       'node-fetch': '^2.6.7',
+38 silly install resolved       phoenix: '^1.6.14',
+38 silly install resolved       rollbar: '^2.26.2',
+38 silly install resolved       semver: '7.6.0',
+38 silly install resolved       'shell-escape': '^0.2.0',
+38 silly install resolved       'shell-quote': '^1.8.1',
+38 silly install resolved       tmp: '^0.0.33',
+38 silly install resolved       'true-myth': '2.2.3',
+38 silly install resolved       tslib: '1.14.1',
+38 silly install resolved       urijs: '^1.19.11',
+38 silly install resolved       uuid: '3.3.2',
+38 silly install resolved       'valid-url': '^1.0.9',
+38 silly install resolved       validator: '^13.7.0',
+38 silly install resolved       ws: '^6.2.2'
+38 silly install resolved     },
+38 silly install resolved     devDependencies: {
+38 silly install resolved       '@heroku-cli/schema': '^1.0.25',
+38 silly install resolved       '@oclif/test': '^2.3.25',
+38 silly install resolved       '@types/ansi-styles': '^3.2.1',
+38 silly install resolved       '@types/chai': '^4.1.7',
+38 silly install resolved       '@types/debug': '^4.1.12',
+38 silly install resolved       '@types/fs-extra': '^5.0.5',
+38 silly install resolved       '@types/glob': '^7.1.1',
+38 silly install resolved       '@types/got': '^9.6.7',
+38 silly install resolved       '@types/inquirer': '^8.2.10',
+38 silly install resolved       '@types/lodash': '^4.14.123',
+38 silly install resolved       '@types/mocha': '^5.2.6',
+38 silly install resolved       '@types/nock': '^9.3.1',
+38 silly install resolved       '@types/node-fetch': '^2.1.6',
+38 silly install resolved       '@types/phoenix': '^1.4.0',
+38 silly install resolved       '@types/proxyquire': '^1.3.28',
+38 silly install resolved       '@types/shell-escape': '^0.2.0',
+38 silly install resolved       '@types/shell-quote': '^1.7.5',
+38 silly install resolved       '@types/supports-color': '^5.3.0',
+38 silly install resolved       '@types/urijs': '^1.19.4',
+38 silly install resolved       '@types/uuid': '^8.3.0',
+38 silly install resolved       '@types/validator': '^10.9.0',
+38 silly install resolved       '@types/write-json-file': '^3.2.1',
+38 silly install resolved       '@types/ws': '^6.0.1',
+38 silly install resolved       'aws-sdk': '^2.421.0',
+38 silly install resolved       bats: '^1.1.0',
+38 silly install resolved       chai: '^4.2.0',
+38 silly install resolved       globby: '^10.0.2',
+38 silly install resolved       lodash: '^4.17.11',
+38 silly install resolved       mocha: '^9.2.2',
+38 silly install resolved       nock: '^10.0.6',
+38 silly install resolved       nyc: '^15.1.0',
+38 silly install resolved       oclif: '3.11.3',
+38 silly install resolved       open: '^8.4.2',
+38 silly install resolved       proxyquire: '^2.1.0',
+38 silly install resolved       qqjs: '0.3.11',
+38 silly install resolved       'read-pkg': '^4.0.1',
+38 silly install resolved       sinon: '^7.2.4',
+38 silly install resolved       'ts-node': '^10.9.1',
+38 silly install resolved       typescript: '4.8.4'
+38 silly install resolved     },
+38 silly install resolved     engines: { node: '~16.20.0' },
+38 silly install resolved     homepage: 'https://cli.heroku.com',
+38 silly install resolved     keywords: [ 'heroku', 'heroku-cli-plugin' ],
+38 silly install resolved     license: 'ISC',
+38 silly install resolved     main: 'lib/index.js',
+38 silly install resolved     mocha: {
+38 silly install resolved       require: [Array],
+38 silly install resolved       'watch-extensions': 'ts',
+38 silly install resolved       recursive: true,
+38 silly install resolved       reporter: 'spec',
+38 silly install resolved       timeout: 360000
+38 silly install resolved     },
+38 silly install resolved     oclif: {
+38 silly install resolved       additionalHelpFlags: [Array],
+38 silly install resolved       additionalVersionFlags: [Array],
+38 silly install resolved       commands: './lib/commands',
+38 silly install resolved       plugins: [Array],
+38 silly install resolved       bin: 'heroku',
+38 silly install resolved       dirname: 'heroku',
+38 silly install resolved       scope: 'heroku-cli',
+38 silly install resolved       npmRegistry: 'https://registry.npmjs.org',
+38 silly install resolved       macos: [Object],
+38 silly install resolved       windows: [Object],
+38 silly install resolved       topics: [Object],
+38 silly install resolved       hooks: [Object],
+38 silly install resolved       update: [Object],
+38 silly install resolved       aliases: [Object]
+38 silly install resolved     },
+38 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/heroku/cli.git' },
+38 silly install resolved     scripts: {
+38 silly install resolved       build: 'rm -rf lib && tsc',
+38 silly install resolved       lint: 'eslint . --ext .ts --config ../../.eslintrc --ignore-path ../../.eslintignore-lib',
+38 silly install resolved       postpublish: 'rm -f oclif.manifest.json',
+38 silly install resolved       posttest: 'yarn lint',
+38 silly install resolved       prepack: 'yarn run build && oclif manifest',
+38 silly install resolved       pretest: 'tsc -p test --noEmit && cd ../.. && yarn build',
+38 silly install resolved       'test:acceptance': 'yarn pretest && mocha --forbid-only "test/**/*.acceptance.test.ts" && node ./bin/bats-test-runner',
+38 silly install resolved       'test:integration': 'yarn pretest && mocha --forbid-only "test/**/*.integration.test.ts"',
+38 silly install resolved       'test:smoke': 'yarn pretest && mocha --forbid-only "test/**/smoke.acceptance.test.ts"',
+38 silly install resolved       test: 'yarn pretest && nyc mocha --forbid-only "test/**/*.unit.test.ts" && yarn posttest',
+38 silly install resolved       version: 'oclif readme --multi && git add README.md ../../docs'
+38 silly install resolved     },
+38 silly install resolved     types: 'lib/index.d.ts',
+38 silly install resolved     gitHead: 'df5cd3093bd9269c635d9bb3996a2140a016cf05',
+38 silly install resolved     _id: 'heroku@8.11.5',
+38 silly install resolved     _nodeVersion: '16.20.2',
+38 silly install resolved     _npmVersion: 'lerna/6.4.1/node@v16.20.2+x64 (linux)',
+38 silly install resolved     dist: {
+38 silly install resolved       integrity: 'sha512-Or3J5qW9fyO+A/w0G4pybjfvd+5AVK8l1fJn7Y+XGKUfAOhZf1Hb5+4Ev6udv2Jxzk1KLHUWEo5dqTAtWv9W+A==',
+38 silly install resolved       shasum: 'cf70069c19165c25baf63373d970961a940e0c5a',
+38 silly install resolved       tarball: 'https://registry.npmjs.org/heroku/-/heroku-8.11.5.tgz',
+38 silly install resolved       fileCount: 326,
+38 silly install resolved       unpackedSize: 529877,
+38 silly install resolved       signatures: [Array]
+38 silly install resolved     },
+38 silly install resolved     _npmUser: {
+38 silly install resolved       name: 'heroku-front-end',
+38 silly install resolved       email: 'heroku-front-end+npm-releases@salesforce.com'
+38 silly install resolved     },
+38 silly install resolved     directories: {},
+38 silly install resolved     maintainers: [
+38 silly install resolved       [Object], [Object], [Object], [Object],
+38 silly install resolved       [Object], [Object], [Object], [Object],
+38 silly install resolved       [Object], [Object], [Object], [Object],
+38 silly install resolved       [Object], [Object], [Object], [Object],
+38 silly install resolved       [Object], [Object], [Object], [Object],
+38 silly install resolved       [Object], [Object], [Object], [Object],
+38 silly install resolved       [Object], [Object], [Object], [Object],
+38 silly install resolved       [Object], [Object], [Object], [Object],
+38 silly install resolved       [Object], [Object], [Object], [Object],
+38 silly install resolved       [Object], [Object], [Object], [Object],
+38 silly install resolved       [Object], [Object], [Object], [Object],
+38 silly install resolved       [Object], [Object], [Object], [Object],
+38 silly install resolved       [Object], [Object], [Object], [Object],
+38 silly install resolved       [Object]
+38 silly install resolved     ],
+38 silly install resolved     _npmOperationalInternal: {
+38 silly install resolved       host: 's3://npm-registry-packages',
+38 silly install resolved       tmp: 'tmp/heroku_8.11.5_1714485232971_0.16486033402223033'
+38 silly install resolved     },
+38 silly install resolved     _hasShrinkwrap: false,
+38 silly install resolved     _shasum: 'cf70069c19165c25baf63373d970961a940e0c5a',
+38 silly install resolved     _resolved: 'https://registry.npmjs.org/heroku/-/heroku-8.11.5.tgz',
+38 silly install resolved     _from: 'heroku@latest',
+38 silly install resolved     readme: 'ERROR: No README data found!'
+38 silly install resolved   }
+38 silly install resolved ]
+39 info install heroku@8.11.5 into /home/runner/Nagi-BOT-MD-1/.config/npm/node_global/lib
+40 info installOne heroku@8.11.5
+41 verbose installOne of heroku to /home/runner/Nagi-BOT-MD-1/.config/npm/node_global/lib not in flight; installing
+42 verbose correctMkdir /home/runner/.npm/_locks correctMkdir not in flight; initializing
+43 verbose lock using /home/runner/.npm/_locks/heroku-2fc47ffbf0330489.lock for /home/runner/Nagi-BOT-MD-1/.config/npm/node_global/lib/node_modules/heroku
+44 warn engine heroku@8.11.5: wanted: {"node":"~16.20.0"} (current: {"node":"18.12.1","npm":"2.15.12"})
+45 silly install write writing heroku 8.11.5 to /home/runner/Nagi-BOT-MD-1/.config/npm/node_global/lib/node_modules/heroku
+46 verbose unbuild lib/node_modules/heroku
+47 info preuninstall heroku@8.11.5
+48 info uninstall heroku@8.11.5
+49 verbose unbuild rmStuff heroku@8.11.5 from /home/runner/Nagi-BOT-MD-1/.config/npm/node_global/lib/node_modules
+50 silly gentlyRm /home/runner/Nagi-BOT-MD-1/.config/npm/node_global/bin/heroku is being gently removed
+51 silly gentlyRm verifying /home/runner/Nagi-BOT-MD-1/.config/npm/node_global is an npm working directory
+52 silly gentlyRm containing path /home/runner/Nagi-BOT-MD-1/.config/npm/node_global is under npm's control, in /home/runner/Nagi-BOT-MD-1/.config/npm/node_global
+53 silly gentlyRm deletion target /home/runner/Nagi-BOT-MD-1/.config/npm/node_global/bin/heroku is under /home/runner/Nagi-BOT-MD-1/.config/npm/node_global
+54 verbose gentlyRm vacuuming from /home/runner/Nagi-BOT-MD-1/.config/npm/node_global/bin/heroku up to /home/runner/Nagi-BOT-MD-1/.config/npm/node_global
+55 info postuninstall heroku@8.11.5
+56 silly gentlyRm /home/runner/Nagi-BOT-MD-1/.config/npm/node_global/lib/node_modules/heroku is being purged from base /home/runner/Nagi-BOT-MD-1/.config/npm/node_global
+57 verbose gentlyRm don't care about contents; nuking /home/runner/Nagi-BOT-MD-1/.config/npm/node_global/lib/node_modules/heroku
+58 silly vacuum-fs purging /home/runner/Nagi-BOT-MD-1/.config/npm/node_global/lib/node_modules/heroku
+59 silly vacuum-fs removing /home/runner/Nagi-BOT-MD-1/.config/npm/node_global/lib/node_modules
+60 silly vacuum-fs removing /home/runner/Nagi-BOT-MD-1/.config/npm/node_global/lib
+61 silly vacuum-fs finished vacuuming up to /home/runner/Nagi-BOT-MD-1/.config/npm/node_global
+62 verbose tar unpack /home/runner/.npm/heroku/8.11.5/package.tgz
+63 verbose tar unpacking to /home/runner/Nagi-BOT-MD-1/.config/npm/node_global/lib/node_modules/heroku
+64 silly gentlyRm /home/runner/Nagi-BOT-MD-1/.config/npm/node_global/lib/node_modules/heroku is being purged
+65 verbose gentlyRm don't care about contents; nuking /home/runner/Nagi-BOT-MD-1/.config/npm/node_global/lib/node_modules/heroku
+66 silly gunzTarPerm modes [ '755', '644' ]
+67 silly gunzTarPerm extractEntry autocomplete-scripts/brew/zsh/_heroku
+68 silly gunzTarPerm extractEntry autocomplete-scripts/zsh/_heroku
+69 silly gunzTarPerm extractEntry autocomplete-scripts/brew/bash
+70 silly gunzTarPerm extractEntry bin/dev
+71 silly gunzTarPerm extractEntry LICENSE
+72 silly gunzTarPerm extractEntry bin/run
+73 silly gunzTarPerm extractEntry autocomplete-scripts/bash/heroku.bash
+74 silly gunzTarPerm extractEntry bin/dev.cmd
+75 silly gunzTarPerm extractEntry bin/run.cmd
+76 silly gunzTarPerm extractEntry lib/commands/buildpacks/add.js
+77 silly gunzTarPerm extractEntry lib/commands/domains/add.js
+78 silly gunzTarPerm extractEntry lib/commands/pipelines/add.js
+79 silly gunzTarPerm extractEntry lib/commands/webhooks/add.js
+80 silly gunzTarPerm extractEntry lib/analytics.js
+81 silly gunzTarPerm extractEntry lib/hooks/prerun/analytics.js
+82 silly gunzTarPerm extractEntry lib/lib/pipelines/api.js
+83 silly gunzTarPerm extractEntry lib/lib/authorizations/authorizations.js
+84 silly gunzTarPerm extractEntry lib/lib/autocomplete/base.js
+85 silly gunzTarPerm extractEntry lib/lib/webhooks/base.js
+86 silly gunzTarPerm extractEntry bin/bats-test-runner.js
+87 silly gunzTarPerm extractEntry lib/hooks/update/brew.js
+88 silly gunzTarPerm extractEntry lib/lib/buildpacks/buildpacks.js
+89 silly gunzTarPerm extractEntry lib/lib/autocomplete/cache.js
+90 silly gunzTarPerm extractEntry lib/commands/buildpacks/clear.js
+91 silly gunzTarPerm extractEntry lib/commands/domains/clear.js
+92 silly gunzTarPerm extractEntry lib/lib/clients/clients.js
+93 silly gunzTarPerm extractEntry lib/commands/git/clone.js
+94 silly gunzTarPerm extractEntry lib/lib/run/colorize.js
+95 silly gunzTarPerm extractEntry lib/hooks/update/completions.js
+96 silly gunzTarPerm extractEntry lib/lib/autocomplete/completions.js
+97 silly gunzTarPerm extractEntry lib/commands/pipelines/connect.js
+98 silly gunzTarPerm extractEntry lib/commands/console.js
+99 silly gunzTarPerm extractEntry lib/lib/pipelines/setup/create-apps.js
+100 silly gunzTarPerm extractEntry lib/commands/authorizations/create.js
+101 silly gunzTarPerm extractEntry lib/commands/autocomplete/create.js
+102 silly gunzTarPerm extractEntry lib/commands/clients/create.js
+103 silly gunzTarPerm extractEntry lib/commands/pipelines/create.js
+104 silly gunzTarPerm extractEntry lib/commands/git/credentials.js
+105 silly gunzTarPerm extractEntry lib/deps.js
+106 silly gunzTarPerm extractEntry lib/commands/clients/destroy.js
+107 silly gunzTarPerm extractEntry lib/commands/pipelines/destroy.js
+108 silly gunzTarPerm extractEntry lib/commands/sessions/destroy.js
+109 silly gunzTarPerm extractEntry lib/commands/run/detached.js
+110 silly gunzTarPerm extractEntry lib/commands/pipelines/diff.js
+111 silly gunzTarPerm extractEntry lib/commands/auth/2fa/disable.js
+112 silly gunzTarPerm extractEntry lib/commands/labs/disable.js
+113 silly gunzTarPerm extractEntry lib/commands/ps/autoscale/disable.js
+114 silly gunzTarPerm extractEntry lib/commands/reviewapps/disable.js
+115 silly gunzTarPerm extractEntry lib/lib/pipelines/disambiguate.js
+116 silly gunzTarPerm extractEntry lib/commands/autocomplete/doctor.js
+117 silly gunzTarPerm extractEntry lib/lib/run/dyno.js
+118 silly gunzTarPerm extractEntry lib/commands/config/edit.js
+119 silly gunzTarPerm extractEntry lib/commands/ps/autoscale/enable.js
+120 silly gunzTarPerm extractEntry lib/commands/reviewapps/enable.js
+121 silly gunzTarPerm extractEntry lib/file.js
+122 silly gunzTarPerm extractEntry lib/lib/local/fork-foreman.js
+123 silly gunzTarPerm extractEntry lib/lib/pipelines/setup/get-ci-settings.js
+124 silly gunzTarPerm extractEntry lib/lib/pipelines/setup/get-github-token.js
+125 silly gunzTarPerm extractEntry lib/lib/pipelines/setup/get-name-and-repo.js
+126 silly gunzTarPerm extractEntry lib/lib/pipelines/setup/get-repo.js
+127 silly gunzTarPerm extractEntry lib/lib/pipelines/setup/get-settings.js
+128 silly gunzTarPerm extractEntry lib/commands/config/get.js
+129 silly gunzTarPerm extractEntry lib/lib/ci/git.js
+130 silly gunzTarPerm extractEntry lib/lib/git/git.js
+131 silly gunzTarPerm extractEntry lib/lib/pipelines/github-api.js
+132 silly gunzTarPerm extractEntry lib/global_telemetry.js
+133 silly gunzTarPerm extractEntry lib/lib/run/helpers.js
+134 silly gunzTarPerm extractEntry lib/commands/auth/2fa/index.js
+135 silly gunzTarPerm extractEntry lib/commands/authorizations/index.js
+136 silly gunzTarPerm extractEntry lib/commands/autocomplete/index.js
+137 silly gunzTarPerm extractEntry lib/commands/buildpacks/index.js
+138 silly gunzTarPerm extractEntry lib/commands/ci/index.js
+139 silly gunzTarPerm extractEntry lib/commands/clients/index.js
+140 silly gunzTarPerm extractEntry lib/commands/config/index.js
+141 silly gunzTarPerm extractEntry lib/commands/domains/index.js
+142 silly gunzTarPerm extractEntry lib/commands/local/index.js
+143 silly gunzTarPerm extractEntry lib/commands/pipelines/index.js
+144 silly gunzTarPerm extractEntry lib/commands/run/index.js
+145 silly gunzTarPerm extractEntry lib/commands/sessions/index.js
+146 silly gunzTarPerm extractEntry lib/commands/webhooks/deliveries/index.js
+147 silly gunzTarPerm extractEntry lib/commands/webhooks/events/index.js
+148 silly gunzTarPerm extractEntry lib/commands/webhooks/index.js
+149 silly gunzTarPerm extractEntry lib/index.js
+150 silly gunzTarPerm extractEntry lib/lib/pipelines/infer.js
+151 silly gunzTarPerm extractEntry lib/commands/authorizations/info.js
+152 silly gunzTarPerm extractEntry lib/commands/buildpacks/info.js
+153 silly gunzTarPerm extractEntry lib/commands/ci/info.js
+154 silly gunzTarPerm extractEntry lib/commands/clients/info.js
+155 silly gunzTarPerm extractEntry lib/commands/domains/info.js
+156 silly gunzTarPerm extractEntry lib/commands/pipelines/info.js
+157 silly gunzTarPerm extractEntry lib/commands/webhooks/deliveries/info.js
+158 silly gunzTarPerm extractEntry lib/commands/webhooks/events/info.js
+159 silly gunzTarPerm extractEntry lib/commands/webhooks/info.js
+160 silly gunzTarPerm extractEntry lib/commands/run/inside.js
+161 silly gunzTarPerm extractEntry lib/lib/pipelines/key-by.js
+162 silly gunzTarPerm extractEntry lib/lib/pipelines/kolkrabbi-api.js
+163 silly gunzTarPerm extractEntry lib/lib/ci/interfaces/kolkrabbi.js
+164 silly gunzTarPerm extractEntry lib/commands/ci/last.js
+165 silly gunzTarPerm extractEntry lib/lib/run/line-transform.js
+166 silly gunzTarPerm extractEntry lib/lib/local/load-foreman-procfile.js
+167 silly gunzTarPerm extractEntry lib/lib/run/log-displayer.js
+168 silly gunzTarPerm extractEntry lib/commands/auth/login.js
+169 silly gunzTarPerm extractEntry lib/commands/auth/logout.js
+170 silly gunzTarPerm extractEntry lib/commands/logs.js
+171 silly gunzTarPerm extractEntry lib/commands/pipelines/open.js
+172 silly gunzTarPerm extractEntry lib/commands/autocomplete/options.js
+173 silly gunzTarPerm extractEntry lib/lib/pipelines/ownership.js
+174 silly gunzTarPerm extractEntry lib/lib/utils/packageParser.js
+175 silly gunzTarPerm extractEntry lib/hooks/command_not_found/performance_analytics.js
+176 silly gunzTarPerm extractEntry lib/hooks/init/performance_analytics.js
+177 silly gunzTarPerm extractEntry lib/hooks/postrun/performance_analytics.js
+178 silly gunzTarPerm extractEntry lib/lib/ci/pipelines.js
+179 silly gunzTarPerm extractEntry lib/hooks/update/plugin-migrate.js
+180 silly gunzTarPerm extractEntry lib/lib/pipelines/setup/poll-app-setups.js
+181 silly gunzTarPerm extractEntry lib/commands/pipelines/promote.js
+182 silly gunzTarPerm extractEntry lib/lib/buildpacks/push.js
+183 silly gunzTarPerm extractEntry lib/lib/config/quote.js
+184 silly gunzTarPerm extractEntry lib/commands/rake.js
+185 silly gunzTarPerm extractEntry lib/hooks/recache.js
+186 silly gunzTarPerm extractEntry lib/commands/regions.js
+187 silly gunzTarPerm extractEntry lib/commands/git/remote.js
+188 silly gunzTarPerm extractEntry lib/commands/buildpacks/remove.js
+189 silly gunzTarPerm extractEntry lib/commands/domains/remove.js
+190 silly gunzTarPerm extractEntry lib/commands/pipelines/remove.js
+191 silly gunzTarPerm extractEntry lib/commands/webhooks/remove.js
+192 silly gunzTarPerm extractEntry lib/commands/pipelines/rename.js
+193 silly gunzTarPerm extractEntry lib/lib/pipelines/render-pipeline.js
+194 silly gunzTarPerm extractEntry lib/commands/ci/rerun.js
+195 silly gunzTarPerm extractEntry lib/commands/authorizations/revoke.js
+196 silly gunzTarPerm extractEntry lib/commands/authorizations/rotate.js
+197 silly gunzTarPerm extractEntry lib/commands/clients/rotate.js
+198 silly gunzTarPerm extractEntry lib/lib/local/run-foreman.js
+199 silly gunzTarPerm extractEntry lib/commands/ci/run.js
+200 silly gunzTarPerm extractEntry lib/commands/local/run.js
+201 silly gunzTarPerm extractEntry lib/commands/autocomplete/script.js
+202 silly gunzTarPerm extractEntry lib/commands/buildpacks/search.js
+203 silly gunzTarPerm extractEntry lib/lib/sessions/sessions.js
+204 silly gunzTarPerm extractEntry lib/commands/buildpacks/set.js
+205 silly gunzTarPerm extractEntry lib/lib/pipelines/setup/setup-pipeline.js
+206 silly gunzTarPerm extractEntry lib/commands/pipelines/setup.js
+207 silly gunzTarPerm extractEntry lib/lib/ci/source.js
+208 silly gunzTarPerm extractEntry lib/lib/pipelines/stages.js
+209 silly gunzTarPerm extractEntry lib/commands/status.js
+210 silly gunzTarPerm extractEntry lib/hooks/init/terms-of-service.js
+211 silly gunzTarPerm extractEntry lib/lib/ci/test-run.js
+212 silly gunzTarPerm extractEntry lib/hooks/update/tidy.js
+213 silly gunzTarPerm extractEntry lib/commands/auth/token.js
+214 silly gunzTarPerm extractEntry lib/commands/pipelines/transfer.js
+215 silly gunzTarPerm extractEntry lib/commands/config/unset.js
+216 silly gunzTarPerm extractEntry lib/commands/authorizations/update.js
+217 silly gunzTarPerm extractEntry lib/commands/clients/update.js
+218 silly gunzTarPerm extractEntry lib/commands/domains/update.js
+219 silly gunzTarPerm extractEntry lib/commands/pipelines/update.js
+220 silly gunzTarPerm extractEntry lib/commands/webhooks/update.js
+221 silly gunzTarPerm extractEntry lib/user-config.js
+222 silly gunzTarPerm extractEntry lib/lib/config/util.js
+223 silly gunzTarPerm extractEntry lib/lib/status/util.js
+224 silly gunzTarPerm extractEntry lib/lib/pipelines/setup/validate.js
+225 silly gunzTarPerm extractEntry lib/commands/local/version.js
+226 silly gunzTarPerm extractEntry lib/hooks/init/version.js
+227 silly gunzTarPerm extractEntry lib/commands/buildpacks/versions.js
+228 silly gunzTarPerm extractEntry lib/lib/domains/wait-for-domain.js
+229 silly gunzTarPerm extractEntry lib/commands/certs/auto/wait.js
+230 silly gunzTarPerm extractEntry lib/commands/domains/wait.js
+231 silly gunzTarPerm extractEntry lib/commands/ps/wait.js
+232 silly gunzTarPerm extractEntry lib/commands/auth/whoami.js
+233 silly gunzTarPerm extractEntry oclif.manifest.json
+234 silly gunzTarPerm extractEntry package.json
+235 silly gunzTarPerm extractEntry autocomplete-scripts/README.md
+236 silly gunzTarPerm extractEntry README.md
+237 silly gunzTarPerm extractEntry lib/commands/buildpacks/add.d.ts
+238 silly gunzTarPerm extractEntry lib/commands/domains/add.d.ts
+239 silly gunzTarPerm extractEntry lib/commands/pipelines/add.d.ts
+240 silly gunzTarPerm extractEntry lib/commands/webhooks/add.d.ts
+241 silly gunzTarPerm extractEntry lib/analytics.d.ts
+242 silly gunzTarPerm extractEntry lib/hooks/prerun/analytics.d.ts
+243 silly gunzTarPerm extractEntry lib/lib/pipelines/api.d.ts
+244 silly gunzTarPerm extractEntry lib/lib/authorizations/authorizations.d.ts
+245 silly gunzTarPerm extractEntry lib/lib/autocomplete/base.d.ts
+246 silly gunzTarPerm extractEntry lib/lib/webhooks/base.d.ts
+247 silly gunzTarPerm extractEntry lib/hooks/update/brew.d.ts
+248 silly gunzTarPerm extractEntry lib/lib/buildpacks/buildpacks.d.ts
+249 silly gunzTarPerm extractEntry lib/lib/autocomplete/cache.d.ts
+250 silly gunzTarPerm extractEntry lib/commands/buildpacks/clear.d.ts
+251 silly gunzTarPerm extractEntry lib/commands/domains/clear.d.ts
+252 silly gunzTarPerm extractEntry lib/lib/clients/clients.d.ts
+253 silly gunzTarPerm extractEntry lib/commands/git/clone.d.ts
+254 silly gunzTarPerm extractEntry lib/lib/run/colorize.d.ts
+255 silly gunzTarPerm extractEntry lib/hooks/update/completions.d.ts
+256 silly gunzTarPerm extractEntry lib/lib/autocomplete/completions.d.ts
+257 silly gunzTarPerm extractEntry lib/commands/pipelines/connect.d.ts
+258 silly gunzTarPerm extractEntry lib/commands/console.d.ts
+259 silly gunzTarPerm extractEntry lib/lib/pipelines/setup/create-apps.d.ts
+260 silly gunzTarPerm extractEntry lib/commands/authorizations/create.d.ts
+261 silly gunzTarPerm extractEntry lib/commands/autocomplete/create.d.ts
+262 silly gunzTarPerm extractEntry lib/commands/clients/create.d.ts
+263 silly gunzTarPerm extractEntry lib/commands/pipelines/create.d.ts
+264 silly gunzTarPerm extractEntry lib/commands/git/credentials.d.ts
+265 silly gunzTarPerm extractEntry lib/deps.d.ts
+266 silly gunzTarPerm extractEntry lib/commands/clients/destroy.d.ts
+267 silly gunzTarPerm extractEntry lib/commands/pipelines/destroy.d.ts
+268 silly gunzTarPerm extractEntry lib/commands/sessions/destroy.d.ts
+269 silly gunzTarPerm extractEntry lib/commands/run/detached.d.ts
+270 silly gunzTarPerm extractEntry lib/commands/pipelines/diff.d.ts
+271 silly gunzTarPerm extractEntry lib/commands/auth/2fa/disable.d.ts
+272 silly gunzTarPerm extractEntry lib/commands/labs/disable.d.ts
+273 silly gunzTarPerm extractEntry lib/commands/ps/autoscale/disable.d.ts
+274 silly gunzTarPerm extractEntry lib/commands/reviewapps/disable.d.ts
+275 silly gunzTarPerm extractEntry lib/lib/pipelines/disambiguate.d.ts
+276 silly gunzTarPerm extractEntry lib/commands/autocomplete/doctor.d.ts
+277 silly gunzTarPerm extractEntry lib/lib/run/dyno.d.ts
+278 silly gunzTarPerm extractEntry lib/commands/config/edit.d.ts
+279 silly gunzTarPerm extractEntry lib/commands/ps/autoscale/enable.d.ts
+280 silly gunzTarPerm extractEntry lib/commands/reviewapps/enable.d.ts
+281 silly gunzTarPerm extractEntry lib/file.d.ts
+282 silly gunzTarPerm extractEntry lib/lib/local/fork-foreman.d.ts
+283 silly gunzTarPerm extractEntry lib/lib/pipelines/setup/get-ci-settings.d.ts
+284 silly gunzTarPerm extractEntry lib/lib/pipelines/setup/get-github-token.d.ts
+285 silly gunzTarPerm extractEntry lib/lib/pipelines/setup/get-name-and-repo.d.ts
+286 silly gunzTarPerm extractEntry lib/lib/pipelines/setup/get-repo.d.ts
+287 silly gunzTarPerm extractEntry lib/lib/pipelines/setup/get-settings.d.ts
+288 silly gunzTarPerm extractEntry lib/commands/config/get.d.ts
+289 silly gunzTarPerm extractEntry lib/lib/ci/git.d.ts
+290 silly gunzTarPerm extractEntry lib/lib/git/git.d.ts
+291 silly gunzTarPerm extractEntry lib/lib/pipelines/github-api.d.ts
+292 silly gunzTarPerm extractEntry lib/global_telemetry.d.ts
+293 silly gunzTarPerm extractEntry lib/lib/run/helpers.d.ts
+294 silly gunzTarPerm extractEntry lib/commands/auth/2fa/index.d.ts
+295 silly gunzTarPerm extractEntry lib/commands/authorizations/index.d.ts
+296 silly gunzTarPerm extractEntry lib/commands/autocomplete/index.d.ts
+297 silly gunzTarPerm extractEntry lib/commands/buildpacks/index.d.ts
+298 silly gunzTarPerm extractEntry lib/commands/ci/index.d.ts
+299 silly gunzTarPerm extractEntry lib/commands/clients/index.d.ts
+300 silly gunzTarPerm extractEntry lib/commands/config/index.d.ts
+301 silly gunzTarPerm extractEntry lib/commands/domains/index.d.ts
+302 silly gunzTarPerm extractEntry lib/commands/local/index.d.ts
+303 silly gunzTarPerm extractEntry lib/commands/pipelines/index.d.ts
+304 silly gunzTarPerm extractEntry lib/commands/run/index.d.ts
+305 silly gunzTarPerm extractEntry lib/commands/sessions/index.d.ts
+306 silly gunzTarPerm extractEntry lib/commands/webhooks/deliveries/index.d.ts
+307 silly gunzTarPerm extractEntry lib/commands/webhooks/events/index.d.ts
+308 silly gunzTarPerm extractEntry lib/commands/webhooks/index.d.ts
+309 silly gunzTarPerm extractEntry lib/index.d.ts
+310 silly gunzTarPerm extractEntry lib/lib/pipelines/infer.d.ts
+311 silly gunzTarPerm extractEntry lib/commands/authorizations/info.d.ts
+312 silly gunzTarPerm extractEntry lib/commands/buildpacks/info.d.ts
+313 silly gunzTarPerm extractEntry lib/commands/ci/info.d.ts
+314 silly gunzTarPerm extractEntry lib/commands/clients/info.d.ts
+315 silly gunzTarPerm extractEntry lib/commands/domains/info.d.ts
+316 silly gunzTarPerm extractEntry lib/commands/pipelines/info.d.ts
+317 silly gunzTarPerm extractEntry lib/commands/webhooks/deliveries/info.d.ts
+318 silly gunzTarPerm extractEntry lib/commands/webhooks/events/info.d.ts
+319 silly gunzTarPerm extractEntry lib/commands/webhooks/info.d.ts
+320 silly gunzTarPerm extractEntry lib/commands/run/inside.d.ts
+321 silly gunzTarPerm extractEntry lib/lib/pipelines/key-by.d.ts
+322 silly gunzTarPerm extractEntry lib/lib/pipelines/kolkrabbi-api.d.ts
+323 silly gunzTarPerm extractEntry lib/lib/ci/interfaces/kolkrabbi.d.ts
+324 silly gunzTarPerm extractEntry lib/commands/ci/last.d.ts
+325 silly gunzTarPerm extractEntry lib/lib/run/line-transform.d.ts
+326 silly gunzTarPerm extractEntry lib/lib/local/load-foreman-procfile.d.ts
+327 silly gunzTarPerm extractEntry lib/lib/run/log-displayer.d.ts
+328 silly gunzTarPerm extractEntry lib/commands/auth/login.d.ts
+329 silly gunzTarPerm extractEntry lib/commands/auth/logout.d.ts
+330 silly gunzTarPerm extractEntry lib/commands/logs.d.ts
+331 silly gunzTarPerm extractEntry lib/commands/pipelines/open.d.ts
+332 silly gunzTarPerm extractEntry lib/commands/autocomplete/options.d.ts
+333 silly gunzTarPerm extractEntry lib/lib/pipelines/ownership.d.ts
+334 silly gunzTarPerm extractEntry lib/lib/utils/packageParser.d.ts
+335 silly gunzTarPerm extractEntry lib/hooks/command_not_found/performance_analytics.d.ts
+336 silly gunzTarPerm extractEntry lib/hooks/init/performance_analytics.d.ts
+337 silly gunzTarPerm extractEntry lib/hooks/postrun/performance_analytics.d.ts
+338 silly gunzTarPerm extractEntry lib/lib/ci/pipelines.d.ts
+339 silly gunzTarPerm extractEntry lib/hooks/update/plugin-migrate.d.ts
+340 silly gunzTarPerm extractEntry lib/lib/pipelines/setup/poll-app-setups.d.ts
+341 silly gunzTarPerm extractEntry lib/commands/pipelines/promote.d.ts
+342 silly gunzTarPerm extractEntry lib/lib/buildpacks/push.d.ts
+343 silly gunzTarPerm extractEntry lib/lib/config/quote.d.ts
+344 silly gunzTarPerm extractEntry lib/commands/rake.d.ts
+345 silly gunzTarPerm extractEntry lib/hooks/recache.d.ts
+346 silly gunzTarPerm extractEntry lib/commands/regions.d.ts
+347 silly gunzTarPerm extractEntry lib/commands/git/remote.d.ts
+348 silly gunzTarPerm extractEntry lib/commands/buildpacks/remove.d.ts
+349 silly gunzTarPerm extractEntry lib/commands/domains/remove.d.ts
+350 silly gunzTarPerm extractEntry lib/commands/pipelines/remove.d.ts
+351 silly gunzTarPerm extractEntry lib/commands/webhooks/remove.d.ts
+352 silly gunzTarPerm extractEntry lib/commands/pipelines/rename.d.ts
+353 silly gunzTarPerm extractEntry lib/lib/pipelines/render-pipeline.d.ts
+354 silly gunzTarPerm extractEntry lib/commands/ci/rerun.d.ts
+355 silly gunzTarPerm extractEntry lib/commands/authorizations/revoke.d.ts
+356 silly gunzTarPerm extractEntry lib/commands/authorizations/rotate.d.ts
+357 silly gunzTarPerm extractEntry lib/commands/clients/rotate.d.ts
+358 silly gunzTarPerm extractEntry lib/lib/local/run-foreman.d.ts
+359 silly gunzTarPerm extractEntry lib/commands/ci/run.d.ts
+360 silly gunzTarPerm extractEntry lib/commands/local/run.d.ts
+361 silly gunzTarPerm extractEntry lib/commands/autocomplete/script.d.ts
+362 silly gunzTarPerm extractEntry lib/commands/buildpacks/search.d.ts
+363 silly gunzTarPerm extractEntry lib/lib/sessions/sessions.d.ts
+364 silly gunzTarPerm extractEntry lib/commands/buildpacks/set.d.ts
+365 silly gunzTarPerm extractEntry lib/lib/pipelines/setup/setup-pipeline.d.ts
+366 silly gunzTarPerm extractEntry lib/commands/pipelines/setup.d.ts
+367 silly gunzTarPerm extractEntry lib/lib/ci/source.d.ts
+368 silly gunzTarPerm extractEntry lib/lib/pipelines/stages.d.ts
+369 silly gunzTarPerm extractEntry lib/commands/status.d.ts
+370 silly gunzTarPerm extractEntry lib/hooks/init/terms-of-service.d.ts
+371 silly gunzTarPerm extractEntry lib/lib/ci/test-run.d.ts
+372 silly gunzTarPerm extractEntry lib/hooks/update/tidy.d.ts
+373 silly gunzTarPerm extractEntry lib/commands/auth/token.d.ts
+374 silly gunzTarPerm extractEntry lib/commands/pipelines/transfer.d.ts
+375 silly gunzTarPerm extractEntry lib/commands/config/unset.d.ts
+376 silly gunzTarPerm extractEntry lib/commands/authorizations/update.d.ts
+377 silly gunzTarPerm extractEntry lib/commands/clients/update.d.ts
+378 silly gunzTarPerm extractEntry lib/commands/domains/update.d.ts
+379 silly gunzTarPerm extractEntry lib/commands/pipelines/update.d.ts
+380 silly gunzTarPerm extractEntry lib/commands/webhooks/update.d.ts
+381 silly gunzTarPerm extractEntry lib/user-config.d.ts
+382 silly gunzTarPerm extractEntry lib/lib/config/util.d.ts
+383 silly gunzTarPerm extractEntry lib/lib/status/util.d.ts
+384 silly gunzTarPerm extractEntry lib/lib/pipelines/setup/validate.d.ts
+385 silly gunzTarPerm extractEntry lib/commands/local/version.d.ts
+386 silly gunzTarPerm extractEntry lib/hooks/init/version.d.ts
+387 silly gunzTarPerm extractEntry lib/commands/buildpacks/versions.d.ts
+388 silly gunzTarPerm extractEntry lib/lib/domains/wait-for-domain.d.ts
+389 silly gunzTarPerm extractEntry lib/commands/certs/auto/wait.d.ts
+390 silly gunzTarPerm extractEntry lib/commands/domains/wait.d.ts
+391 silly gunzTarPerm extractEntry lib/commands/ps/wait.d.ts
+392 silly gunzTarPerm extractEntry lib/commands/auth/whoami.d.ts
+393 verbose write writing to /home/runner/Nagi-BOT-MD-1/.config/npm/node_global/lib/node_modules/heroku/package.json
+394 info preinstall heroku@8.11.5
+395 verbose readDependencies loading dependencies from /home/runner/Nagi-BOT-MD-1/.config/npm/node_global/lib/node_modules/heroku/package.json
+396 silly prepareForInstallMany adding @heroku-cli/color@2.0.1 from heroku dependencies
+397 silly prepareForInstallMany adding @heroku-cli/command@^10.0.0 from heroku dependencies
+398 silly prepareForInstallMany adding @heroku-cli/command-v9@npm:@heroku-cli/command@^9.0.2 from heroku dependencies
+399 silly prepareForInstallMany adding @heroku-cli/notifications@^1.2.4 from heroku dependencies
+400 silly prepareForInstallMany adding @heroku-cli/plugin-addons-v5@^8.11.2 from heroku dependencies
+401 silly prepareForInstallMany adding @heroku-cli/plugin-apps-v5@^8.11.2 from heroku dependencies
+402 silly prepareForInstallMany adding @heroku-cli/plugin-certs-v5@^8.11.3 from heroku dependencies
+403 silly prepareForInstallMany adding @heroku-cli/plugin-ci-v5@^8.11.5 from heroku dependencies
+404 silly prepareForInstallMany adding @heroku-cli/plugin-container-registry-v5@^8.11.2 from heroku dependencies
+405 silly prepareForInstallMany adding @heroku-cli/plugin-orgs-v5@^8.11.2 from heroku dependencies
+406 silly prepareForInstallMany adding @heroku-cli/plugin-pg-v5@^8.11.2 from heroku dependencies
+407 silly prepareForInstallMany adding @heroku-cli/plugin-ps@^8.1.7 from heroku dependencies
+408 silly prepareForInstallMany adding @heroku-cli/plugin-ps-exec@^2.4.0 from heroku dependencies
+409 silly prepareForInstallMany adding @heroku-cli/plugin-redis-v5@^8.11.1 from heroku dependencies
+410 silly prepareForInstallMany adding @heroku-cli/plugin-run@8.1.4 from heroku dependencies
+411 silly prepareForInstallMany adding @heroku-cli/plugin-spaces@^8.11.1 from heroku dependencies
+412 silly prepareForInstallMany adding @heroku-cli/schema@^1.0.25 from heroku dependencies
+413 silly prepareForInstallMany adding @heroku/buildpack-registry@^1.0.1 from heroku dependencies
+414 silly prepareForInstallMany adding @heroku/eventsource@^1.0.7 from heroku dependencies
+415 silly prepareForInstallMany adding @oclif/core@^2.8.11 from heroku dependencies
+416 silly prepareForInstallMany adding @oclif/core-v1@npm:@oclif/core@^1.26.2 from heroku dependencies
+417 silly prepareForInstallMany adding @oclif/plugin-commands@2.2.2 from heroku dependencies
+418 silly prepareForInstallMany adding @oclif/plugin-help@^5 from heroku dependencies
+419 silly prepareForInstallMany adding @oclif/plugin-legacy@^1.3.0 from heroku dependencies
+420 silly prepareForInstallMany adding @oclif/plugin-not-found@2.3.16 from heroku dependencies
+421 silly prepareForInstallMany adding @oclif/plugin-plugins@2.4.3 from heroku dependencies
+422 silly prepareForInstallMany adding @oclif/plugin-update@3.2.4 from heroku dependencies
+423 silly prepareForInstallMany adding @oclif/plugin-version@^1.2.1 from heroku dependencies
+424 silly prepareForInstallMany adding @oclif/plugin-warn-if-update-available@2.0.29 from heroku dependencies
+425 silly prepareForInstallMany adding @oclif/plugin-which@2.2.8 from heroku dependencies
+426 silly prepareForInstallMany adding @opentelemetry/api@^1.4.1 from heroku dependencies
+427 silly prepareForInstallMany adding @opentelemetry/exporter-trace-otlp-http@^0.41.1 from heroku dependencies
+428 silly prepareForInstallMany adding @opentelemetry/instrumentation@^0.50.0 from heroku dependencies
+429 silly prepareForInstallMany adding @opentelemetry/resources@^1.15.1 from heroku dependencies
+430 silly prepareForInstallMany adding @opentelemetry/sdk-trace-base@^1.15.1 from heroku dependencies
+431 silly prepareForInstallMany adding @opentelemetry/sdk-trace-node@^1.15.1 from heroku dependencies
+432 silly prepareForInstallMany adding @opentelemetry/semantic-conventions@^1.15.1 from heroku dependencies
+433 silly prepareForInstallMany adding ansi-escapes@3.2.0 from heroku dependencies
+434 silly prepareForInstallMany adding async-file@^2.0.2 from heroku dependencies
+435 silly prepareForInstallMany adding chalk@^2.4.2 from heroku dependencies
+436 silly prepareForInstallMany adding commander@^2.15.1 from heroku dependencies
+437 silly prepareForInstallMany adding date-fns@^2.30.0 from heroku dependencies
+438 silly prepareForInstallMany adding debug@4.3.4 from heroku dependencies
+439 silly prepareForInstallMany adding edit-string@^1.1.6 from heroku dependencies
+440 silly prepareForInstallMany adding execa@5.1.1 from heroku dependencies
+441 silly prepareForInstallMany adding foreman@^3.0.1 from heroku dependencies
+442 silly prepareForInstallMany adding fs-extra@7.0.1 from heroku dependencies
+443 silly prepareForInstallMany adding github-url-to-object@^4.0.4 from heroku dependencies
+444 silly prepareForInstallMany adding got@^9.6.0 from heroku dependencies
+445 silly prepareForInstallMany adding heroku-cli-util@^8.0.12 from heroku dependencies
+446 silly prepareForInstallMany adding http-call@5.3.0 from heroku dependencies
+447 silly prepareForInstallMany adding inquirer@^8.2.6 from heroku dependencies
+448 silly prepareForInstallMany adding lodash@^4.17.21 from heroku dependencies
+449 silly prepareForInstallMany adding netrc-parser@3.1.6 from heroku dependencies
+450 silly prepareForInstallMany adding node-fetch@^2.6.7 from heroku dependencies
+451 silly prepareForInstallMany adding phoenix@^1.6.14 from heroku dependencies
+452 silly prepareForInstallMany adding rollbar@^2.26.2 from heroku dependencies
+453 silly prepareForInstallMany adding semver@7.6.0 from heroku dependencies
+454 silly prepareForInstallMany adding shell-escape@^0.2.0 from heroku dependencies
+455 silly prepareForInstallMany adding shell-quote@^1.8.1 from heroku dependencies
+456 silly prepareForInstallMany adding tmp@^0.0.33 from heroku dependencies
+457 silly prepareForInstallMany adding true-myth@2.2.3 from heroku dependencies
+458 silly prepareForInstallMany adding tslib@1.14.1 from heroku dependencies
+459 silly prepareForInstallMany adding urijs@^1.19.11 from heroku dependencies
+460 silly prepareForInstallMany adding uuid@3.3.2 from heroku dependencies
+461 silly prepareForInstallMany adding valid-url@^1.0.9 from heroku dependencies
+462 silly prepareForInstallMany adding validator@^13.7.0 from heroku dependencies
+463 silly prepareForInstallMany adding ws@^6.2.2 from heroku dependencies
+464 verbose readDependencies loading dependencies from /home/runner/Nagi-BOT-MD-1/.config/npm/node_global/lib/node_modules/heroku/package.json
+465 verbose stack Error: Unsupported URL Type: npm:@heroku-cli/command@^9.0.2
+465 verbose stack     at parseUrl (/home/runner/Nagi-BOT-MD-1/node_modules/npm/node_modules/npm-package-arg/npa.js:169:13)
+465 verbose stack     at npa (/home/runner/Nagi-BOT-MD-1/node_modules/npm/node_modules/npm-package-arg/npa.js:75:12)
+465 verbose stack     at resolver (/home/runner/Nagi-BOT-MD-1/node_modules/npm/lib/install.js:845:42)
+465 verbose stack     at Timeout._onTimeout (/home/runner/Nagi-BOT-MD-1/node_modules/npm/lib/install.js:840:7)
+465 verbose stack     at listOnTimeout (node:internal/timers:564:17)
+465 verbose stack     at process.processTimers (node:internal/timers:507:7)
+466 verbose cwd /home/runner/Nagi-BOT-MD-1
+467 error Linux 6.5.0-1022-gcp
+468 error argv "/nix/store/dj805sw07vvpbxx39c8g67x8qddg0ikw-nodejs-18.12.1/bin/node" "/home/runner/Nagi-BOT-MD-1/node_modules/.bin/npm" "install" "-g" "heroku"
+469 error node v18.12.1
+470 error npm  v2.15.12
+471 error Unsupported URL Type: npm:@heroku-cli/command@^9.0.2
+472 error If you need help, you may report this error at:
+472 error     <https://github.com/npm/npm/issues>
+473 verbose exit [ 1, true ]
